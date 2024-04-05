@@ -1,0 +1,28 @@
+{
+  "manifest_version": 3,
+  "name": "Speech-to-Text Extension",
+  "version": "1.0",
+  "description": "Converts speech from the microphone to text on webpages.",
+  "permissions": ["activeTab", "storage", "scripting"],
+  "background": {
+    "service_worker": "background.js"
+  },
+
+  "action": {
+    "default_popup": "extensionpop.html",
+    "default_icon": {
+      "16": "video_camera.png",
+      "48": "video_camera.png",
+      "128": "video_camera.png"
+    }
+  },
+  "icons": {
+    "16": "video_camera.png",
+    "48": "video_camera.png",
+    "128": "video_camera.png"
+  },
+  "host_permissions": [
+    "http://*/*",
+    "https://*/*"
+  ]
+}
